@@ -1,9 +1,9 @@
 /* import useState from library  */
 import React, { useState, useEffect } from 'react'
-import axios from './axios'
+import axios from './axios';
 import './row.css';
 
-const base_url = "https://image.tmdb.org/t/p/original/";
+const base_url = `https://image.tmdb.org/t/p/original/`;
 
 /* pass title in the props and call in to render */
 function Row({ title, fetchUrl, isLargeRow }) {
@@ -29,7 +29,9 @@ fetchData();
                 <img 
                     key={movie.id} /* optimizes the data and updates only was is required */
                     className={`row__poster ${isLargeRow && "row__posterLarge"}`}
-                    src={`${base_url}${isLargeRow ? movie.poster_path : movie.backdrop_path }`} alt={movie.name} />
+                    src={`${base_url}${isLargeRow ? movie.poster_path : movie.backdrop_path}`} 
+                    alt={movie.name} 
+                />
             ))}
             </div>
         </div>
