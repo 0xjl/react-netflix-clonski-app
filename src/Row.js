@@ -1,6 +1,5 @@
-/* import useState from library  */
 import React, { useState, useEffect } from 'react'
-import axios from './axios';
+import axios from './axiosRequest';
 import './row.css';
 import YouTube from "react-youtube";
 import movieTrailer from "movie-trailer";
@@ -8,7 +7,7 @@ import movieTrailer from "movie-trailer";
 const base_url = `https://image.tmdb.org/t/p/original/`;
 
 /* pass title in the props and call in to render */
-function Row({ title, fetchUrl, isLargeRow }) {
+const Row = ({ title, fetchUrl, isLargeRow }) => {
     /* use hook called useState and make movies stateful */
     const [movies, setMovies] = useState([]);
     const [trailerUrl, setTrailerUrl] = useState("");
