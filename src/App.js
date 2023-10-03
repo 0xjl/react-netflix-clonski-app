@@ -16,7 +16,8 @@ const App = () => {
         isLargeRow
       />
       <Row title='Trending Now' fetchUrl={requests.fetchTrending} />
-      <Row title='Top Rated' fetchUrl={requests.fetchTopRated} />    </div>
+      <Row title='Top Rated' fetchUrl={requests.fetchTopRated} />    
+    </div>
   );
 }
 

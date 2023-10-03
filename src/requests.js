@@ -1,4 +1,4 @@
-const API_KEY = "381970ed4a1c0871d5e0ac74f397a2b7";
+const API_KEY = `052b509e65c16455876082ef00a996fb`;
 const trendingUrl = `/trending/all/week?api_key=`;
 const originalsUrl = `/discover/tv?api_key=`;
 const lowerBaseUrl = `/discover/movie?api_key=`;
